@@ -13,15 +13,15 @@
 
 @font-face {
     font-family:vhs;
-    src: url(font/vhs.ttf);
+    src: url(../font/vhs.ttf);
 }
 @font-face {
     font-family:matrix;
-    src: url(font/matrix.ttf);
+    src: url(../font/matrix.ttf);
 }
 @font-face {
     font-family:comicsans;
-    src: url(font/comicsans.ttf);
+    src: url(../font/comicsans.ttf);
 }
 
 h1{
