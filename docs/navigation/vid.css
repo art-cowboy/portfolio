@@ -28,14 +28,11 @@ h1{
     font-family: cursive;
     color: hotpink;
 }
-header{
-
-}
 
 main{
-   display: flex;
+    display: flex;
     width: 100vw;
-    height: calc(100vh - 1.5rem);
+    height:100vh;
     justify-content: center;
     align-items: center;
 
@@ -90,35 +87,10 @@ main{
     width: 4rem;
 }
 
-.top-nav{
-   
-    font-size: 1.2rem;
-    width:100vw;
-    height: 1.5rem;
-    /* display: flex;
-    justify-content: left;
-    align-items: center; */
-    position: relative;
-    background-color: blueviolet;    
 
-}
-.menu{
-    width: 50%;
-    display: inline-flex;
-    justify-content: flex-start;
-}
 
-.icons{
-    position: absolute;
-    width: 50%;
-    display: inline-flex;
-    justify-content: flex-end;
-}
-.icon{
-    width: max-content;
-    padding: 0 1rem;
 
-} 
+
 
 
 
@@ -143,11 +115,10 @@ main{
         display: flex;
         flex-direction: column;
         width: 97vw;
-        height: calc(100vh - 1.5rem);
+        height:100vh;
         justify-content: flex-start;
         align-items: center;
         margin: 0 auto;
-
     }
     
     .content{
@@ -163,7 +134,7 @@ main{
         align-items: center;
         justify-content: center;
         
-    } 
+    }
     
     .folder-nav{
         /* ul element */
@@ -183,23 +154,5 @@ main{
     .folder h3{
         font-size: 1rem;
     }
-
-    .top-nav{
-        width: 100vw;
-        display: flex;
-        justify-content: space-around;
-    }
-    .icons{
-
-    }
-    .menu{
-
-    }
-    .icon{
-        position: relative;
-        padding: 0 .5rem;
-    }
-
-
-
+    
 }
