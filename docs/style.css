@@ -39,8 +39,6 @@ main{
     justify-content: center;
     align-items: center;
 
-
-    border: lime 3px solid;
 }
 
 .content{
@@ -50,7 +48,6 @@ main{
     max-width: 60rem;
 
     margin: 2rem;
-    border: lightblue 3px solid;
 
 }
 
@@ -63,9 +60,6 @@ main{
     width: max-content;
     height: max-content;
 
-
-
-    border: blue 3px solid;
 
 }
 
@@ -119,6 +113,9 @@ main{
     padding: 0 1rem;
 
 } 
+.small, .lower{
+    display: none;
+}
 
 
 
@@ -143,7 +140,7 @@ main{
         display: flex;
         flex-direction: column;
         width: 97vw;
-        height: calc(100vh - 1.5rem);
+        height: calc(100vh - 3rem);
         justify-content: flex-start;
         align-items: center;
         margin: 0 auto;
@@ -184,22 +181,41 @@ main{
         font-size: 1rem;
     }
 
-    .top-nav{
-        width: 100vw;
-        display: flex;
-        justify-content: space-around;
-    }
-    .icons{
 
+}
+
+@media only screen and (max-width: 600px) {
+    .icons{
+        display: none;
     }
     .menu{
-
+        width: max-content;
     }
+    .top-nav{
+        width: 99vw;
+        display: flex;
+        justify-content: center;
+    }
+ 
     .icon{
-        position: relative;
+        width: max-content;
         padding: 0 .5rem;
+
+    } 
+  
+    .lower{
+        bottom: 2rem;
+        width: 97vw;
+        height: 2rem;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items:center;
+        
     }
-
-
-
+    .small{
+        height: max-content;
+        display: flex;
+        
+    }
 }
