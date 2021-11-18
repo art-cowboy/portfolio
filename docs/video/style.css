@@ -15,7 +15,7 @@
     src: url(font/matrix.ttf);
 }
 @font-face {
-    font-family:comicsans;
+    font-family:comicsans; 
     src: url(font/comicsans.ttf);
 }
 
@@ -27,7 +27,7 @@ h1{
     font-family: cursive;
     color: hotpink;
 } 
-
+ 
 .sidebar ul{
     position: fixed;
     width: max-content;
