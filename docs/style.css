@@ -131,9 +131,6 @@ main{
 
 
 
-
-
-
 @media only screen and (max-width: 768px) {
 
     main{
@@ -150,7 +147,7 @@ main{
     .content{
         /* iframe element */
         width: 95%;
-        height: 60vmax;
+        height: 75vmax;
         max-width: 60rem;    
     }
     
@@ -179,6 +176,10 @@ main{
 
     .folder h3{
         font-size: 1rem;
+    }
+
+    .trash{
+        transform: scale(90%);
     }
 
 
