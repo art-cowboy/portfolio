@@ -117,7 +117,9 @@ main{
     display: none;
 }
 
-
+.im{
+    width: 3.5rem;
+}
 
 
 
@@ -205,18 +207,21 @@ main{
     } 
   
     .lower{
-        bottom: 2rem;
+        bottom: 1rem;
         width: 97vw;
         height: 2rem;
         display: flex;
         position: absolute;
         justify-content: center;
-        align-items:center;
+        align-items:flex-start;
         
     }
     .small{
         height: max-content;
         display: flex;
         
+    }
+    .im{
+        display: none;
     }
 }
