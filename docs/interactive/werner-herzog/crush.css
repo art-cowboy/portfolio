@@ -1,0 +1,28 @@
+
+html { 
+ 	background: url(gifs/werner-pink-sparkle.gif) no-repeat center center fixed; 
+  	-webkit-background-size: cover; q
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	cursor: url(gifs/arrows/pink_arrow_up.gif), auto;
+}
+
+@font-face{
+	font-family: comicsans;
+	src: url(ComicSans/ComicSansMS/comicsansms.ttf);
+}
+
+a{
+	cursor: url(gifs/arrows/twinkle.gif), auto;
+}
+
+#goback{
+	position: fixed;
+	bottom: 10px
+}
+
+#agh{
+	position: relative;
+	margin:auto;
+}

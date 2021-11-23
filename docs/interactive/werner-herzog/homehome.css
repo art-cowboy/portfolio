@@ -1,0 +1,319 @@
+
+/*html { 
+ 	background: url(images/sky.gif) no-repeat center center fixed; 
+  	-webkit-background-size: cover; q
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}*/
+
+@font-face{
+	font-family: comicsans;
+	src: url(ComicSans/ComicSansMS/comicsansms.ttf);
+}
+
+html{
+	padding:0px;
+	background-size: cover;
+	cursor: url(gifs/arrows/pink_arrow_up.gif),auto;
+	font-family: comicsans;
+}
+
+body{
+	padding:0px;
+	margin: 0px;
+}
+
+a{
+	cursor: url(gifs/arrows/twinkle.gif), auto;
+}
+
+@keyframes werner{
+
+	0%{
+		left:0px;
+		bottom:calc(100% - 200px);
+	}
+
+	25%{
+		left:calc(100% - 150px);
+		bottom:calc(50% - 50px);
+	}
+
+	50%{
+		left:0px;
+		bottom:0%;
+	}
+
+	75%{
+		left:calc(100% - 150px);
+		bottom:calc(50% - 50px);
+	}
+	100%{
+		left:0px;
+		bottom:calc(100% - 200px);
+	}
+}
+
+#werner{
+	position: fixed;
+	z-index: 3;
+	animation-name: werner;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#pink-circle{
+	top:25px;
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image: 
+	radial-gradient(rgba(252, 3, 161,1),rgba(252, 3, 161,0));
+	z-index: 2;
+}
+
+#pink-bar{
+	z-index: 1;
+	height:550px;
+	width: 100%;
+	position: relative;
+	background-image:
+	linear-gradient(to right, rgba(252, 111, 194, 0),rgba(252, 111, 194, .5),
+	rgba(252, 111, 194, 1),rgba(252, 111, 194, .5),rgba(252, 111, 194, 0));
+}
+
+#pinksparkles{
+	z-index: -1;
+	height:550px;
+	width: 100%;
+	background:url(gifs/pinksparkles.gif) center;
+	background-size:cover;
+}
+
+#crush{
+	top:185px;
+	position: relative;
+	left: 155px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#heart_md_clr{
+	top:200px;
+	left: 50px;
+	position: relative;
+	padding-left: 50px;
+}
+
+#rose-heart{
+	top:40px;
+	position: relative;
+	left:50px;
+}
+
+#twohearts{
+	top:50px;
+	position: relative;
+	left:200px;
+	padding-left: 100px;
+}
+
+#heart{
+	bottom:300px;
+	position: relative;
+	left:200px;
+	padding-left:175px;
+}
+
+#hearts-2{
+	bottom:250px;
+	position: relative;
+	left:200px;
+	padding-left: 175px;
+}
+
+#heart-2{
+	bottom:250px;
+	position: relative;
+	left:150px;
+}
+
+#heart-3{
+	bottom:675px;
+	position: relative;
+	left:125px;
+}
+
+#diamonds{
+	bottom:800px;
+	position: relative;
+	left:250px;
+}
+
+#orange-circle{
+	top:25px;
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image:
+	radial-gradient(rgba(255, 125, 0, 1),rgba(255, 125, 0, 0));
+	z-index:2;
+}
+
+#brown-bar{
+	z-index: 1;
+	height:550px;
+	width: 100%;
+	position: relative;
+	background-image:
+	linear-gradient(to right, rgba(196, 108, 0, 0),rgba(196, 108, 0, .5),
+	rgba(196, 108, 0, 1),rgba(196, 108, 0, .5),rgba(196, 108, 0, 0));
+}
+
+#goldglitter{
+	z-index: -1;
+	height:550px;
+	width: 100%;
+	background:url(gifs/goldglitter.gif) center;
+	background-size:cover;
+}
+
+#hotboot{
+	top:175px;
+	position: relative;
+	left:55px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#dance{
+	position: relative;
+	left:175px;
+	bottom: 25px;
+}
+
+#shoes{
+	position: relative;
+	left:200px;
+	top:100px;
+}
+
+#tap{
+	position: relative;
+	left: 75px;
+	bottom:60px;
+}
+
+#tanshoes{
+	position: relative;
+	left: 250px;
+	padding-left:60px;
+	bottom:150px;
+}
+
+
+#movingstar{
+	z-index: -1;
+	height:550px;
+	width: 100%;
+	background:url(gifs/movingstar.gif) center;
+	background-size:cover;
+}
+
+#purple-bar{
+	z-index: 1;
+	height:550px;
+	width: 100%;
+	position: relative;
+	background-image:
+	linear-gradient(to right, rgba(110, 67, 176, 0),rgba(110, 67, 176, .5),
+	rgba(110, 67, 176, 1),rgba(110, 67, 176, .5),rgba(110, 67, 176, 0));
+}
+
+#blue-circle{
+	top:25px;
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image:
+	radial-gradient(rgba(52, 9, 117, 1),rgba(52, 9, 117, 0));
+	z-index:2;
+}
+
+#reelandfilm{
+	top:225px;
+	position: relative;
+	left:175px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#clapper2{
+	top:50px;
+	position: relative;
+	left: 60px;
+}
+
+#clapper{
+	bottom:200px;
+	position: relative;
+	left: 300px;
+	padding-left: 50px;
+}
+
+#project{
+	bottom: 160px;
+	position: relative;
+	left: 200px;
+}
+
+#spotlight{
+	bottom: 75px;
+	position: relative;
+	left: 125px;
+}
+
+#next{
+	bottom:180px;
+	position: relative;
+	left: 300px;
+}
+
+
+.pink-bar{
+	z-index: 1;
+	height:15px;
+	width: 100%;
+	position: relative;
+	background-image:
+	linear-gradient(to right, rgba(252, 111, 194, 0),rgba(252, 111, 194, .5),
+	rgba(252, 111, 194, 1),rgba(252, 111, 194, .5),rgba(252, 111, 194, 0));
+}
+
+.pinksparkles{
+	z-index: -1;
+	height:15px;
+	width: 100%;
+	background:url(gifs/pinksparkles.gif) center;
+	background-size:cover;
+}
+
+
+#goback{
+	z-index: 2;
+	position: fixed;
+	bottom: 10px;
+	cursor: url(gifs/arrows/twinkle.gif), auto;
+
+}
+

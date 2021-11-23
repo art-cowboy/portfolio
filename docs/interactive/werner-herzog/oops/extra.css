@@ -1,0 +1,77 @@
+
+
+html { 
+ 	cursor: url(../gifs/arrows/pink_arrow_up.gif), auto;
+}
+
+.pinkie{
+	background: url(../gifs/pinksparkles.gif)no-repeat center center fixed;
+	-webkit-background-size: cover; 
+  	-moz-background-size: cover;
+  	-o-background-size: cover; 
+	background-size: cover;
+	padding:0px;
+	font-family: comicsans;
+
+}
+
+@font-face{
+	font-family: comicsans;
+	src: url(ComicSans/ComicSansMS/comicsansms.ttf);
+}
+
+a{
+	cursor: url(../gifs/arrows/twinkle.gif), auto;
+}
+
+#goback{
+	position: fixed;
+	bottom: 10px
+}
+
+.pics{
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	width: 50%;
+	padding-top: 50px;
+}
+
+.pink{
+	color: magenta;
+	text-align: center;
+	font-size: 35px;
+}
+
+.purple{
+	color:purple;
+	text-align:center;
+	font-size: 35px;
+}
+
+.or{
+	color: rgb(82, 46, 20);
+	text-align: center;
+	font-size: 35px;
+}
+
+.stars{
+	background: url(../gifs/movingstar.gif)no-repeat center center fixed;
+	-webkit-background-size: cover; 
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding:0px;
+}
+
+.gold{
+	background: url(../gifs/goldglitter.gif)no-repeat center center fixed;
+	-webkit-background-size: cover; 
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding:0px;
+}
+
+
+

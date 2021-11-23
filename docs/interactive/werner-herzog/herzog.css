@@ -1,0 +1,75 @@
+
+/*html { 
+ 	background: url(images/sky.gif) no-repeat center center fixed; 
+  	-webkit-background-size: cover; q
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}*/
+
+@font-face{
+	font-family: comicsans;
+	src: url(ComicSans/ComicSansMS/comicsansms.ttf);
+}
+
+html{
+	padding:0px;
+	background: url(gifs/werner-silver-hearts.gif) no-repeat center fixed;
+	background-size: cover;
+	cursor: url(gifs/arrows/pink_arrow_up.gif),auto;
+}
+
+body{
+	padding:0px;
+	margin: 0px;
+}
+
+img{
+	position: relative;
+	height: auto;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a{
+	cursor: url(gifs/arrows/twinkle.gif), auto;
+}
+
+#header{
+	top: 250px;
+	position: relative;
+	height: auto;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: lightpink double;
+	color: lightpink;
+	z-index: 1;
+	font-family:comicsans;
+	text-align: center;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#intosite{
+	top: 250px;
+	left: 150px;
+	position: relative;
+	height:auto;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

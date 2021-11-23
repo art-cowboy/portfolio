@@ -1,0 +1,66 @@
+
+html { 
+ 	background: url(gifs/goldglitter.gif) no-repeat center center fixed; 
+  	-webkit-background-size: cover; q
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding:0px;
+	background-size: cover;
+	cursor: url(gifs/arrows/pink_arrow_up.gif),auto;
+	font-family: comicsans;
+}
+
+@font-face{
+	font-family: comicsans;
+	src: url(ComicSans/ComicSansMS/comicsansms.ttf);
+}
+
+h1{
+	color:brown;
+	border:15px double brown;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: rgba(255, 179, 0, 0.3);
+}
+
+a{
+	cursor: url(gifs/arrows/twinkle.gif), auto;
+}
+
+iframe{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#goback{
+	position: fixed;
+	bottom: 10px;
+}
+
+#werner{
+	position: fixed;
+	z-index: 3;
+	animation-name: werner;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes  werner{
+	0%{
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
