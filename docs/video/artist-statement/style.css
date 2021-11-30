@@ -1,4 +1,9 @@
+@font-face {
+    font-family: vhs;
+    src: url(../../font/vhs.ttf);
+}
+
 h1{
-    font-family: cursive;
-    color: hotpink;
+    font-family:vhs;
+    /* color: hotpink; */
 }

@@ -8,15 +8,15 @@
 }
 @font-face {
     font-family:vhs;
-    src: url(font/vhs.ttf);
+    src: url(../font/vhs.ttf);
 }
 @font-face {
     font-family:matrix;
-    src: url(font/matrix.ttf);
+    src: url(../font/matrix.ttf);
 }
 @font-face {
     font-family:comicsans; 
-    src: url(font/comicsans.ttf);
+    src: url(../font/comicsans.ttf);
 }
 
 body{
@@ -40,22 +40,22 @@ h1{
 
     background-color: rgba(237, 237, 237, 0.7);
 }
+.item{
+    font-family:vhs;
+    padding: .7rem .3rem;
+ 
+    
+ /* background-image: linear-gradient(red, white); */
+ }
+ 
+ .item a:visited{
+     color: inherit;
+ }
 
 .sidebar input{
     display: none;
 }
 
-.item{
-   padding: .7rem .3rem;
-
-   
-/* background-image: linear-gradient(red, white); */
-}
-
-.item a:visited{
-    color: inherit;
-}
- 
 .piece{
     position: absolute;
     left:13rem;
@@ -87,6 +87,8 @@ h1{
         width: max-content;
         height: max-content;
         max-width: 13rem;
+
+        /* background-color: violet; */
         
         /* background: #ededed;
         list-style-type: none;
@@ -106,7 +108,7 @@ h1{
         margin: 5px;
         position: relative;
         
-        background: white;
+        background: rgba(150, 150, 150, .5);
         border-radius: 3px;
         
         z-index: 2;

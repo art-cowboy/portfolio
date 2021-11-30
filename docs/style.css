@@ -125,8 +125,34 @@ a:visited{
 .im{
     width: 3.5rem;
 }
+/* BLANK PAGE */
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
-
+.pick-me{
+    font-family: vhs;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: mediumpurple;
+    animation: spin 10s cubic-bezier(.56,.19,.53,1.31) 4s infinite ;
+}
 
 
 

@@ -20,7 +20,8 @@
 }
 
 body{
-    background: chartreuse;
+    
+    /* background: chartreuse; */
 }
 
 h1{
@@ -29,26 +30,32 @@ h1{
 } 
   
 .sidebar ul{
+    
     position: fixed;
-    width: 13rem;
-    /* max-width: 13rem; */
+    width: max-content;
+    max-width: 13rem;
     height: 100vh;
 
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
 
-    background: cornflowerblue;
+    background-color: rgba(237, 237, 237, 0.7);
 }
+.item{
+    
+    padding: .7rem .3rem;
+ 
+    
+ /* background-image: linear-gradient(red, white); */
+ }
+ 
+ .item a:visited{
+     color: inherit;
+ }
 
 .sidebar input{
     display: none;
-}
-
-.item{
-   padding: .7rem .3rem;
-
-    background-image: linear-gradient(red, white);
 }
 
 .piece{
