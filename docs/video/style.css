@@ -20,7 +20,7 @@
 }
 
 body{
-    background: chartreuse;
+    /* background: chartreuse; */
 }
 
 h1{
@@ -38,7 +38,7 @@ h1{
     display: flex;
     flex-direction: column;
 
-    background: cornflowerblue;
+    background-color: rgba(237, 237, 237, 0.7);
 }
 
 .sidebar input{
@@ -48,9 +48,14 @@ h1{
 .item{
    padding: .7rem .3rem;
 
-    background-image: linear-gradient(red, white);
+   
+/* background-image: linear-gradient(red, white); */
 }
 
+.item a:visited{
+    color: inherit;
+}
+ 
 .piece{
     position: absolute;
     left:13rem;
