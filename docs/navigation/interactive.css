@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
+    cursor: url(../cursors/cellular.cur), auto;
 }
 
 :root{
@@ -22,6 +22,37 @@
 @font-face {
     font-family:comicsans;
     src: url(../font/comicsans.ttf);
+}
+@font-face {
+    font-family: scholar;
+    src: url(../font/scholar.otf);
+}
+
+@keyframes yarp {
+    0%{
+        color: mediumturquoise;
+    }
+    30%{
+       color: plum;
+    }
+    60%{
+        color: maroon;
+    }
+    100%{
+        color: mediumturquoise;
+    }
+}
+
+body{
+    background-image: url(../gifs/sparklecloud.gif);
+}
+.fill{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-image: url(../gifs/sparkly7.gif);
+    opacity: .15;
 }
 
 h1{
@@ -69,9 +100,19 @@ main{
 }
 
 .folder h3{
-    font-family:comicsans;
+    line-height: 2rem;
+    font-family:scholar;
     text-decoration:none;
     /* color: var(--color1); */
+}
+
+.folder a{
+    color:rgb(0, 212, 255) ;
+    text-shadow: maroon 1px 1px 2px;
+}
+.folder a:hover{
+    color: maroon;
+    transition: .3s;
 }
 
 /* .folder :visited{
@@ -84,17 +125,36 @@ main{
 }
 
 .top-nav{
-   
-    font-size: 1.2rem;
+    font-family: scholar;
+    font-size: 1rem;
     width:100vw;
     height: 1.5rem;
     /* display: flex;
     justify-content: left;
     align-items: center; */
     position: relative;
-    background-color: blueviolet;    
-
+    background-image: linear-gradient(rgb(0, 212, 255), rgba(80, 156, 242, .7), rgba(79, 38, 224, .5));    
 }
+
+.yarp h3{
+    animation-name: yarp;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+.menu a{
+    color:lavenderblush;
+}
+
+.menu a:hover{
+    color:maroon ;
+    transition: .3s;
+}
+.menu a:active{
+    color:maroon ;
+    transition: .3s;
+}
+
 .menu{
     width: 50%;
     display: inline-flex;
@@ -128,11 +188,9 @@ main{
     width: 3.5rem;
 }
 
-
 iframe{
     border-radius: 8px 8px 8px 8px;
 }
-
 
 
 
@@ -141,9 +199,6 @@ iframe{
     background-color: pink;
     height:500px;
 }
-
-
-
 
 
 

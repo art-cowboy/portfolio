@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
+    cursor: url(../cursors/saturn.png), auto;
 }
 
 :root{
@@ -23,6 +23,26 @@
     font-family:comicsans;
     src: url(../font/comicsans.ttf);
 }
+
+@keyframes yarp {
+    0%{
+        color: yellow;
+    }
+    30%{
+        color: fuchsia;
+    }
+    60%{
+        color: cyan;
+    }
+    100%{
+        color: yellow;
+    }
+}
+
+body{
+    background-image: url(../gifs/space2.gif);
+}
+
 iframe{
     border-radius: 8px 8px 8px 8px;
 }
@@ -36,7 +56,7 @@ header{
 }
 
 main{
-   display: flex;
+    display: flex;
     width: 100vw;
     height: calc(100vh - 1.5rem);
     justify-content: center;
@@ -71,10 +91,24 @@ main{
     
 }
 
+.yarp h3{
+    animation-name: yarp;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
 .folder h3{
     font-family:comicsans;
     text-decoration:none;
     /* color: var(--color1); */
+}
+.folder-nav a{
+    color: yellow;
+    text-shadow: fuchsia 1px 1px 2px;
+}
+.folder-nav a:hover{
+    transition: .2s;
+    color: fuchsia;
 }
 
 /* .folder :visited{
@@ -87,7 +121,6 @@ main{
 }
 
 .top-nav{
-   
     font-size: 1.2rem;
     width:100vw;
     height: 1.5rem;
@@ -95,13 +128,21 @@ main{
     justify-content: left;
     align-items: center; */
     position: relative;
-    background-color: blueviolet;    
+    background-image: linear-gradient(rgb(250, 238, 198),  rgba(255, 255, 0, 0.7), rgba(255, 208, 0, 0.6) );    
 
 }
 .menu{
     width: 50%;
     display: inline-flex;
     justify-content: flex-start;
+}
+.menu a{
+    font-family: comicsans;
+    color: cyan;
+}
+.menu a:hover{
+    color: fuchsia;
+    transition: .3s;
 }
 
 .icons{
@@ -110,12 +151,11 @@ main{
     display: inline-flex;
     justify-content: flex-end;
 }
-.icon{
+
+.icon{ 
     width: max-content;
     padding: 0 1rem;
-
 } 
-
 .icons img:hover{
     transform: scale(1.1);
      transition: .5s;

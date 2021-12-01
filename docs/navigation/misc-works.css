@@ -2,6 +2,33 @@
     font-family: comicsans;
     src: url(../font/comicsans.ttf);
 }
+*{
+    cursor: url(../cursors/saturn.png), auto;
+}
 body{
     font-family: comicsans;
+} 
+h1{
+    font-family:comicsans;
+    text-shadow: yellow 1px 1px 1px;
+}
+
+h2{
+    font-family:monospace;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+body{
+    background-color: rgba(245, 250, 247, 0.9);
+}
+
+a{
+    text-decoration: none;
+    color: fuchsia;
+}
+
+a:hover{
+    transition: .2s;
+    color: cyan;
 }

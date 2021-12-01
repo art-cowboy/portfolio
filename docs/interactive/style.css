@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
+    cursor: url(../cursors/cellular.cur), auto;
 }
 @font-face {
     font-family:vhs;
@@ -17,6 +17,10 @@
 @font-face {
     font-family:comicsans; 
     src: url(font/comicsans.ttf);
+}
+@font-face {
+    font-family: scholar;
+    src: url(../font/scholar.otf);
 }
 
 body{
@@ -31,6 +35,8 @@ h1{
 .icon-deco{
     height: 90%;
     padding-right:1rem;
+    padding-left: .2rem;
+    padding-top: .1rem;
 }
 
 .top-deco{
@@ -39,7 +45,7 @@ h1{
     top: 0;
     left: 0;
     border-radius: 8px 8px  0 0 ;
-    background-image: linear-gradient(rgb(194, 245, 66), rgba(170, 245, 66,.7) );
+    background-image: linear-gradient(plum,  rgba(255, 240, 245, .7));
     width: 100vw;
     height: 2rem;
 }
@@ -60,6 +66,20 @@ h1{
 
     background-color: rgba(237, 237, 237, 0.7);
 }
+
+.item a{
+    line-height: 1rem;
+    color: maroon;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: plum 2px 2px 3px;
+}
+
+.item a:hover{
+    color: mediumturquoise;
+    transition: .2s;
+}
+
+
 .item{
     padding: .7rem .3rem;
  
@@ -67,9 +87,9 @@ h1{
  /* background-image: linear-gradient(red, white); */
  }
  
- .item a:visited{
-     color: inherit;
- }
+ /* .item a:visited{
+    color: inherit;
+ } */
 
 
 .sidebar input{

@@ -25,7 +25,6 @@
         color: orangered;
     }
 }
- 
 
 @font-face {
     font-family:vhs;
@@ -39,6 +38,7 @@
     font-family:comicsans;
     src: url(../font/comicsans.ttf);
 }
+
 body{
     background-image: url(../gifs/matrixpink.gif);
     background-position: center; 
@@ -94,7 +94,7 @@ main{
 .folder{
     /* list element */
     text-align: center;
-    
+     
 }
 
 .folder a{
@@ -125,8 +125,6 @@ main{
     transition: .3s;
 }
 
-
-
 .top-nav{
     font-family: monospace;
     font-size: 1.2rem;
@@ -137,7 +135,6 @@ main{
     align-items: center; */
     position: relative;
     background-image:linear-gradient( rgb(94, 250, 162), rgba(63, 155, 63,.7), rgba(46, 139, 87 , .6) );    
-
 }
 
 .menu a{

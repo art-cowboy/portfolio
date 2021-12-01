@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
 }
 
 :root{
@@ -24,24 +23,26 @@
     src: url(font/comicsans.ttf);
 }
 
+body{
+    cursor: url(cursors/cuteswd.cur), auto;
+}
+
 h1{
     font-family: cursive;
     color: hotpink;
 }
-header{
 
-}
 iframe{
+    cursor: url(cursors/cuteswd.cur), auto;
     border-radius: 8px;
 }
 
-main{
-   display: flex;
+main{ 
+    display: flex;
     width: 100vw;
     height: calc(100vh - 1.5rem);
     justify-content: center;
     align-items: center;
-
 }
 
 a:visited{
@@ -93,6 +94,7 @@ a:visited{
 }
 
 .folder-nav a:hover{
+    color: rgb(255, 226, 255);
     text-shadow: teal -2px -2px 3px;
 }
 
@@ -222,6 +224,7 @@ a:visited{
 .blank{
     /* background-color: pink; */
     height:500px;
+    cursor: default, auto;
 }
 
 
