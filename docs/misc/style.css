@@ -28,6 +28,26 @@ h1{
     font-family: cursive;
     color: hotpink;
 } 
+
+.icon-deco{
+    height: 90%;
+    padding-right:1rem;
+}
+
+.top-deco{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px  0 0 ;
+    background-image: linear-gradient(rgb(194, 245, 66), rgba(170, 245, 66,.7) );
+    width: 100vw;
+    height: 2rem;
+}
+.sidebar{
+    top: 2rem;
+    position:absolute;
+} 
   
 .sidebar ul{
     
@@ -61,13 +81,19 @@ h1{
 .piece{
     position: absolute;
     left:13rem;
-    height: 100%;
+    height: calc(100vh - 2rem);
     width: calc(100% - 13rem);
-    
+    top:2rem;
+    overflow: scroll;
 }
 
 
 @media only screen and (max-width: 550px) {
+    
+    .top-deco{
+        display: none;
+    }
+   
     .sidebar input{
         display: block;
         width: 40px;
