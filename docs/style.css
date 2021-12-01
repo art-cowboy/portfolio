@@ -220,8 +220,8 @@ a:visited{
     background-size: 300px;
 }
 
-
 .blank{
+    text-align: center;
     /* background-color: pink; */
     height:500px;
     cursor: default, auto;
