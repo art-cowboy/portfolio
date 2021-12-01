@@ -31,6 +31,9 @@ h1{
 header{
 
 }
+iframe{
+    border-radius: 8px;
+}
 
 main{
    display: flex;
@@ -64,8 +67,6 @@ a:visited{
     /* ul element */
     width: max-content;
     height: max-content;
-
-
 }
 
 .folder{
@@ -85,6 +86,16 @@ a:visited{
     color: inherit;
 } */
 
+.folder-nav a{
+    color: white;
+    text-shadow: teal 1px 1px 3px;
+    transition: .2s;
+}
+
+.folder-nav a:hover{
+    text-shadow: teal -2px -2px 3px;
+}
+
 .folder img{
     width: 4rem;
 }
@@ -98,9 +109,25 @@ a:visited{
     justify-content: left;
     align-items: center; */
     position: relative;
-    background-color: blueviolet;    
-
+    background-image: linear-gradient(rgb(0, 128, 128), rgba(72, 243, 229, 0.7), rgba(135, 206, 235, .6));    
 }
+
+.menu a{
+    
+    font-family: comicsans;
+    color: rgb(231, 52, 231);
+    font-size: 1rem;
+}
+
+.menu a:hover{
+    transition: .2s;
+    color: white;
+}
+.menu a:active{
+    transition: .2s;
+    color: white;
+}
+
 .menu{
     width: 50%;
     display: inline-flex;
@@ -113,11 +140,21 @@ a:visited{
     display: inline-flex;
     justify-content: flex-end;
 }
+
 .icon{
     width: max-content;
     padding: 0 1rem;
 
 } 
+.icons img:hover{
+    transform: scale(1.1);
+     transition: .5s;
+ }
+ .icons img:active{
+     transform: scale(1.1);
+     transition: .5s;
+  }
+
 .small, .lower{
     display: none;
 }
@@ -153,6 +190,15 @@ a:visited{
     color: mediumpurple;
     animation: spin 10s cubic-bezier(.56,.19,.53,1.31) 4s infinite ;
     text-shadow: black 1px 1px 1px;
+}
+
+.bg{
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .background{
