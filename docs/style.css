@@ -152,6 +152,7 @@ a:visited{
     align-items: center;
     color: mediumpurple;
     animation: spin 10s cubic-bezier(.56,.19,.53,1.31) 4s infinite ;
+    text-shadow: black 1px 1px 1px;
 }
 
 

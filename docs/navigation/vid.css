@@ -4,12 +4,28 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
+    cursor: url(../cursors/Mouse.cur),auto ;
 }
 
 :root{
     --color1: rgb(39, 242, 66);
 }
+
+@keyframes yarp {
+    0%{
+        color: hotpink;
+    }
+    25%{
+        color: mediumpurple;
+    }
+    75%{
+        color: navy;
+    }
+    100%{
+        color: hotpink;
+    }
+}
+ 
 
 @font-face {
     font-family:vhs;
@@ -24,12 +40,22 @@
     src: url(../font/comicsans.ttf);
 }
 
+body{
+   
+    background-image: url(../gifs/blueglitter.gif);
+    background-size: contain;
+}
+
 h1{
     font-family: cursive;
     color: hotpink;
 }
 header{
 
+}
+
+iframe{
+    border-radius: 8px 8px 8px 8px;
 }
 
 main{
@@ -51,6 +77,10 @@ main{
 
 }
 
+.yarp h3{
+    animation: yarp 5s infinite;
+}
+
 .folder-container{
     /* nav element */
 }
@@ -65,36 +95,67 @@ main{
 .folder{
     /* list element */
     text-align: center;
+    color: lightpink ;
+    text-shadow: navy 1px 1px 1px;
     
 }
 
 .folder h3{
-    font-family:comicsans;
+    font-family:vhs;
     text-decoration:none;
     /* color: var(--color1); */
 }
 
-/* .folder :visited{
+.folder a:visited{
     text-decoration:none;
     color: inherit;
-} */
+} 
+
+.folder a:hover{
+    color: navy;
+    transition:0.3s;
+    /* hello */
+}
+.folder a:active{
+    color: navy;
+    transition:0.3s;
+    /* hello */
+}
 
 .folder img{
     width: 4rem;
 }
 
 .top-nav{
-   
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width:100vw;
     height: 1.5rem;
+    font-family: vhs;
+    
     /* display: flex;
     justify-content: left;
     align-items: center; */
     position: relative;
-    background-color: blueviolet;    
+    background-image: linear-gradient(rgb(255, 189, 228),rgba(243, 56, 168, 0.623), rgba(192, 161, 201, 1));
 
 }
+
+.top-nav a{
+    color: rgb(194, 245, 66);
+}
+.top-nav a:visited{
+    color: rgb(194, 245, 66);
+}
+
+.top-nav a:hover{
+    color:navy;
+    transition: .2s;
+}
+.top-nav a:active{
+    color:navy;
+    transition: .2s;
+}
+
 .menu{
     width: 50%;
     display: inline-flex;
@@ -110,8 +171,17 @@ main{
 .icon{
     width: max-content;
     padding: 0 1rem;
-
 } 
+
+.icons img:hover{
+   transform: scale(1.1);
+    transition: .5s;
+}
+.icons img:active{
+    transform: scale(1.1);
+    transition: .5s;
+ }
+
 .small, .lower{
     display: none;
 }

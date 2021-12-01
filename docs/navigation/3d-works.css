@@ -1,0 +1,13 @@
+@font-face {
+    font-family:comicsans;
+    src: url(../font/comicsans.ttf);
+}
+
+@font-face {
+    font-family:matrix;
+    src: url(../font/matrix.ttf);
+}
+
+body{
+    font-family: matrix;
+}
