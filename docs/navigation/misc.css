@@ -115,6 +115,15 @@ main{
     padding: 0 1rem;
 
 } 
+
+.icons img:hover{
+    transform: scale(1.1);
+     transition: .5s;
+ }
+ .icons img:active{
+     transform: scale(1.1);
+     transition: .5s;
+  }
 .small, .lower{
     display: none;
 }

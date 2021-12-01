@@ -155,7 +155,22 @@ a:visited{
     text-shadow: black 1px 1px 1px;
 }
 
-
+.background{
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(gifs/bg_1.gif);
+    background-size: 300px;
+}
+.sec1{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(255, 217, 253, 0.6);
+    background-size: 300px;
+}
 
 
 .blank{

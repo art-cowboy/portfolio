@@ -8,6 +8,31 @@
     src: url(../font/matrix.ttf);
 }
 
+*{
+    cursor: url(../cursors/N64.cur), auto;
+}
+
+h1{
+    font-family:matrix;
+    text-shadow: orangered 1px 1px 1px;
+}
+
+h2{
+    font-family:monospace;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
 body{
-    font-family: matrix;
+    background-color: rgba(250, 248, 245, 0.9);
+}
+
+a{
+    text-decoration: none;
+    color: orangered;
+}
+
+a:hover{
+    transition: .2s;
+    color: darkseagreen;
 }

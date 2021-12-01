@@ -4,12 +4,28 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
+    cursor: url(../cursors/N64.cur), auto;
 }
 
 :root{
     --color1: rgb(39, 242, 66);
 }
+
+@keyframes yarp {
+    0%{
+        color: orangered;
+    }
+    25%{
+        color: darkseagreen;
+    }
+    75%{
+        color: darkmagenta;
+    }
+    100%{
+        color: orangered;
+    }
+}
+ 
 
 @font-face {
     font-family:vhs;
@@ -23,17 +39,23 @@
     font-family:comicsans;
     src: url(../font/comicsans.ttf);
 }
+body{
+    background-image: url(../gifs/matrixpink.gif);
+    background-position: center; 
+    
+}
+
 iframe{
     border-radius: 8px 8px 8px 8px;
 }
 
-h1{
+/* h1{
     font-family: cursive;
     color: hotpink;
 }
 header{
 
-}
+}  */
 
 main{
    display: flex;
@@ -54,6 +76,10 @@ main{
 
 }
 
+.yarp h3{
+    animation: yarp 5s infinite;
+}
+
 .folder-container{
     /* nav element */
 }
@@ -71,8 +97,11 @@ main{
     
 }
 
-.folder h3{
-    font-family:comicsans;
+.folder a{
+    color: seagreen ;
+    text-shadow:  orangered 1px 1px 2px;
+    font-size: 1rem;
+    font-family:matrix;
     text-decoration:none;
     /* color: var(--color1); */
 }
@@ -86,8 +115,20 @@ main{
     width: 4rem;
 }
 
+.folder a:hover{
+    color: darkmagenta;
+    transition: .3s;
+}
+
+.folder a:active{
+    color: darkmagenta;
+    transition: .3s;
+}
+
+
+
 .top-nav{
-   
+    font-family: monospace;
     font-size: 1.2rem;
     width:100vw;
     height: 1.5rem;
@@ -95,10 +136,21 @@ main{
     justify-content: left;
     align-items: center; */
     position: relative;
-    background-color: blueviolet;    
+    background-image:linear-gradient( rgb(94, 250, 162), rgba(63, 155, 63,.7), rgba(46, 139, 87 , .6) );    
 
 }
+
+.menu a{
+    color: darkmagenta;
+}
+
+.menu a:hover{
+    transition: .3s;
+    color: orangered;
+}
+
 .menu{
+    
     width: 50%;
     display: inline-flex;
     justify-content: flex-start;
@@ -115,6 +167,15 @@ main{
     padding: 0 1rem;
 
 } 
+
+.icons img:hover{
+    transform: scale(1.1);
+     transition: .5s;
+ }
+ .icons img:active{
+     transform: scale(1.1);
+     transition: .5s;
+  }
 .small, .lower{
     display: none;
 }

@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style-type: none;
 
+        cursor: url(../cursors/N64.cur), auto;    
 }
 @font-face {
     font-family:vhs;
@@ -31,6 +32,7 @@ h1{
 .icon-deco{
     height: 90%;
     padding-right:1rem;
+    max-width: 3rem;
 }
 
 .top-deco{
@@ -39,7 +41,7 @@ h1{
     top: 0;
     left: 0;
     border-radius: 8px 8px  0 0 ;
-    background-image: linear-gradient(rgb(194, 245, 66), rgba(170, 245, 66,.7) );
+    background-image: linear-gradient(magenta, rgba(139, 0, 139, .7) );
     width: 100vw;
     height: 2rem;
 }
@@ -62,7 +64,10 @@ h1{
 }
 .item{
     padding: .7rem .3rem;
- 
+    font-family: monospace;
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+    text-shadow: orange 1px 1px 1px;
     
  /* background-image: linear-gradient(red, white); */
  }
@@ -70,6 +75,10 @@ h1{
  .item a:visited{
      color: inherit;
  }
+ .item a:hover{
+    text-shadow: orangered 1px 1px 1px ;
+    transition: .2s;
+}
 
 .sidebar input{
     display: none;
