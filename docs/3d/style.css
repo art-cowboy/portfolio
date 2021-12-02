@@ -62,7 +62,7 @@ h1{
 
     background-color: rgba(237, 237, 237, 0.7);
 }
-.item{
+.item{ 
     padding: .7rem .3rem;
     font-family: monospace;
     font-size: 1.1rem;
@@ -71,10 +71,16 @@ h1{
     
  /* background-image: linear-gradient(red, white); */
  }
- 
- .item a:visited{
-     color: inherit;
+
+ .item a{
+     color:black;
+    text-shadow: orange 1px 1px 1px;
  }
+/*  
+ .item a:visited{
+     color: black;
+ } */
+ 
  .item a:hover{
     text-shadow: orangered 1px 1px 1px ;
     transition: .2s;

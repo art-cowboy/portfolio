@@ -183,6 +183,18 @@ a:visited{
     }
 }
 
+@keyframes melon {
+    0%{
+        color: hotpink;
+    }
+    50%{
+        color: lawngreen;
+    }
+    100%{
+        color: hotpink;
+    }
+}
+
 .pick-me{
     font-family: vhs;
     height: 90vh;
@@ -226,7 +238,32 @@ a:visited{
     height:500px;
     cursor: default, auto;
 }
+.melon{
+    background-color: rgba(255, 217, 253, 0.6);
+    height: 100vh;
+    width: 100vw;
+}
 
+.melon h2{
+    animation: melon 4s infinite;
+    font-family: vhs;
+    font-size: 3rem;
+}
+
+.melon h3{
+    font-size: 1rem;
+    font-family: comicsans;
+}
+
+.melon h3:hover{
+    color: hotpink;
+    font-family: comicsans;
+}
+
+.melon a img{
+    max-height: 4rem;
+    max-width: 6rem;
+}
 
 
 @media only screen and (max-width: 768px) {
