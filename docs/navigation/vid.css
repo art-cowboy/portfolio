@@ -108,7 +108,7 @@ main{
 
 .folder a:visited{
     text-decoration:none;
-    color: inherit;
+    color: lightpink;
 } 
 
 .folder a:hover{
