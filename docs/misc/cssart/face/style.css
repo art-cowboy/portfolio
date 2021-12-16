@@ -41,6 +41,13 @@
 	--face4: rgba(255, 246, 235, 0);
 	/* face 1 w/ no opacity */
 	--face5: rgba(255, 227, 194, 0);
+	/* "white" */
+	--face6: rgb(255, 246, 235);
+	/* face 1 w/ lil opacity */
+	--face7: rgba(255, 227, 194, 0.3);
+	/* shadow */
+	--face8: rgba(187, 142, 112, 0.3);
+
 --bg1:aliceblue;
 --bg2:violet;
 }
@@ -210,7 +217,7 @@ body {
 
 	background-image: linear-gradient(
 		100deg,
-		rgba(255, 227, 194, 0.3),
+		var(--face7, rgba(255, 227, 194, 0.3)),
 		var(--face2, rgb(255, 246, 235)),
 		var(--face2, rgb(255, 246, 235))
 	);
@@ -301,7 +308,7 @@ body {
 
 	z-index: 1;
 
-	border-color: rgb(255, 246, 235);
+	border-color: var(--face6, white);
 	border-width: 7px 0px 0px 3px;
 	border-style: solid;
 
@@ -327,7 +334,7 @@ body {
 	height: 50px;
 	border-radius: 60%;
 
-	border-color: rgb(255, 246, 235);
+	border-color: var(--face6, white);
 	border-width: 7px 0px 0px 0px;
 	border-style: solid;
 
@@ -530,11 +537,11 @@ body {
 	width: 120px;
 
 	border-radius: 4px 0px 0px 4px;
-	border-width: px 0px 3px 0px;
-	border-color: white;
+	border-width: 2px 0px 3px 0px;
+	border-color: var(--face6, white);
 	border-style: solid;
 
-	filter: blur(1px);
+	filter: blur(2px);
 	transform: rotate(-35deg);
 }
 
@@ -581,7 +588,7 @@ body {
 		rgb(255, 251, 199) 80%
 	);
 
-	filter: drop-shadow(10px 10px 10px tan);
+	filter: drop-shadow(10px 10px 10px var(--face8, rgba(187, 142, 112, 0.3)));
 }
 
 .hair-part {
@@ -678,7 +685,7 @@ body {
 	position: absolute;
 	height: 0;
 	width: 15px;
-	border-bottom: 20px solid tan;
+	border-bottom: 20px solid var(--face8 , rgba(187, 142, 112, 0.3));
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 
@@ -695,11 +702,11 @@ body {
 	width: 70px;
 
 	border-radius: 50%;
-	background-color: var(--skin2, rgb(255, 246, 235));
+	background-color: var(--face2, rgb(255, 246, 235));
 
-	border-top: var(--skin1, rgb(255, 227, 194)) 3px solid;
-	border-right: var(--skin1, rgb(255, 227, 194)) 2px solid;
-	border-bottom: var(--skin1, rgb(255, 227, 194)) 2px solid;
+	border-top: var(--face1, rgb(255, 227, 194)) 3px solid;
+	border-right: var(--face1, rgb(255, 227, 194)) 2px solid;
+	border-bottom: var(--face1, rgb(255, 227, 194)) 2px solid;
 
 	filter: blur(1px);
 }

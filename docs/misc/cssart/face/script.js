@@ -7,9 +7,6 @@
 //   iris.style.top = top + 'px';
 // });
 
-
-
-
 //buttons
 
 let button1 = document
@@ -21,15 +18,15 @@ let button2 = document
 let button3 = document
 	.getElementById("color3")
 	.addEventListener("click", changeColor3);
-// let button4 = document
-// 	.getElementById("skin1")
-// 	.addEventListener("click", changeSkin1);
-// let button5 = document
-// 	.getElementById("skin2")
-// 	.addEventListener("click", changeSkin2);
-// let button6 = document
-// 	.getElementById("skin3")
-// 	.addEventListener("click", changeSkin3);
+let button4 = document
+	.getElementById("skin1")
+	.addEventListener("click", changeSkin1);
+let button5 = document
+	.getElementById("skin2")
+	.addEventListener("click", changeSkin2);
+let button6 = document
+	.getElementById("skin3")
+	.addEventListener("click", changeSkin3);
 // let button7 = document
 // 	.getElementById("skin4")
 // 	.addEventListener("click", changeSkin4);
@@ -111,28 +108,39 @@ function changeColor3() {
 }
 
 
-// function changeSkin1() {
-// 	x.style.setProperty("--face1", "rgb(255, 227, 194)");
-// 	x.style.setProperty("--face2", "rgb(255, 246, 235)");
-// 	x.style.setProperty("--face3", "rgba(255, 246, 235, 0.7)");
-// 	x.style.setProperty("--face4", "rgba(255, 246, 235, 0)");
-// 	x.style.setProperty("--face5", "rgba(255, 227, 194, 0)");
-// }
+function changeSkin1() {
+	x.style.setProperty("--face1", "rgb(255, 227, 194)");
+	x.style.setProperty("--face2", "rgb(255, 246, 235)");
+	x.style.setProperty("--face3", "rgba(255, 246, 235, 0.7)");
+	x.style.setProperty("--face4", "rgba(255, 246, 235, 0)");
+	x.style.setProperty("--face5", "rgba(255, 227, 194, 0)");
+	x.style.setProperty("--face6", "rgb(255, 255, 255)");
+	x.style.setProperty("--face7", "rgba(255, 227, 194, 0.3)");
+	x.style.setProperty("--face8", "rgba(187, 142, 112, 0.3)");
+}
 
-// function changeSkin2() {
-// 	x.style.setProperty("--face1", "rgb(201, 147, 81)");
-// 	x.style.setProperty("--face2", "rgb(241, 195, 125)");
-// 	x.style.setProperty("--face3", "rgba(241, 195, 125, 0.7)");
-// 	x.style.setProperty("--face4", "rgba(241, 195, 125, 0)");
-// 	x.style.setProperty("--face5", "rgba(201, 147, 81, 0)");
-// }
-// function changeSkin3() {
-// 	x.style.setProperty("--face1", "rgb(255, 227, 194)");
-// 	x.style.setProperty("--face2", "rgb(255, 246, 235)");
-// 	x.style.setProperty("--face3", "rgba(255, 246, 235, 0.7)");
-// 	x.style.setProperty("--face4", "rgba(255, 246, 235, 0)");
-// 	x.style.setProperty("--face5", "rgba(255, 227, 194, 0)");
-// }
+function changeSkin2() {
+	x.style.setProperty("--face1", "rgb(232, 176, 139)");
+	x.style.setProperty("--face2", "rgb(246, 202, 172)");
+	x.style.setProperty("--face3", "rgba(246, 202, 172, 0.7)");
+	x.style.setProperty("--face4", "rgba(246, 202, 172, 0)");
+	x.style.setProperty("--face5", "rgba(232, 176, 139, 0)");
+	x.style.setProperty("--face6", "rgb(249, 219, 199)");
+	x.style.setProperty("--face7", "rgba(232, 176, 139, 0.3)");
+	x.style.setProperty("--face8", "rgba(204, 130, 81, 0.3)");
+}
+
+function changeSkin3() {
+	x.style.setProperty("--face1", "rgb(96, 55, 28)");
+	x.style.setProperty("--face2", "rgb(119, 76, 47)");
+	x.style.setProperty("--face3", "rgba(119, 76, 47, 0.7)");
+	x.style.setProperty("--face4", "rgba(119, 76, 47, 0)");
+	x.style.setProperty("--face5", "rgba(96, 55, 28, 0)");
+	x.style.setProperty("--face6", "rgb(141, 99, 70)");
+	x.style.setProperty("--face7", "rgba(96, 55, 28, 0.3)");
+	x.style.setProperty("--face8", "rgba(25, 11, 2, .3)");
+}
+
 // function changeSkin4() {
 // 	x.style.setProperty("--face1", "rgb(255, 227, 194)");
 // 	x.style.setProperty("--face2", "rgb(255, 246, 235)");
