@@ -7,6 +7,11 @@
 //   iris.style.top = top + 'px';
 // });
 
+
+
+
+//buttons
+
 let button1 = document
 	.getElementById("color1")
 	.addEventListener("click", changeColor1);
@@ -29,8 +34,17 @@ let button3 = document
 // 	.getElementById("skin4")
 // 	.addEventListener("click", changeSkin4);
  
+
+
+
+//class selectors
+
+
 let x = document.querySelector(":root");
-// let xx = getComputedStyle(x);
+
+
+
+//functions
 
 function changeColor1() {
 	x.style.setProperty("--lip1", "rgb(199, 0, 192)");
@@ -52,7 +66,7 @@ function changeColor1() {
 	x.style.setProperty("--bg1", "aliceblue");
 	x.style.setProperty("--bg2", "violet");
 
-}
+} 
 
 function changeColor2() {
 	x.style.setProperty("--lip1", "red");
@@ -96,6 +110,7 @@ function changeColor3() {
 	x.style.setProperty("--bg2", "darkseagreen");
 }
 
+
 // function changeSkin1() {
 // 	x.style.setProperty("--face1", "rgb(255, 227, 194)");
 // 	x.style.setProperty("--face2", "rgb(255, 246, 235)");
@@ -125,3 +140,43 @@ function changeColor3() {
 // 	x.style.setProperty("--face4", "rgba(255, 246, 235, 0)");
 // 	x.style.setProperty("--face5", "rgba(255, 227, 194, 0)");
 // }
+
+//buttons : button ID and then the funtion 
+
+let earring1 = document
+	.getElementById("earring1")
+	.addEventListener("click", changeEarring1);
+
+let earring2 = document
+	.getElementById("earring2")
+	.addEventListener("click", changeEarring2);
+
+let earring3 = document
+	.getElementById("earring3")
+	.addEventListener("click", changeEarring3);
+//getting the ID of the accessories
+
+let pearl = document.querySelector("#pearl");
+let star = document.querySelector("#star");
+let diamond = document.querySelector("#diamond")
+
+//function: the variable with the class, than the properties
+
+function changeEarring1(){
+	pearl.style.setProperty("display", "block");
+	star.style.setProperty("display", "none");
+	diamond.style.setProperty("display", "none");
+	
+}
+
+function changeEarring2(){
+	pearl.style.setProperty("display", "none");
+	star.style.setProperty("display", "block");
+	diamond.style.setProperty("display", "none");
+}
+
+function changeEarring3(){
+	pearl.style.setProperty("display", "none");
+	star.style.setProperty("display", "none");
+	diamond.style.setProperty("display", "flex");
+}

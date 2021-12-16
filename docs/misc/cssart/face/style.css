@@ -50,7 +50,7 @@ position: absolute;
 width: 100vw;
 height: 100vh;
 }
-
+ 
 .colors {
 	z-index: 15;
 	margin: 0.5rem 0 0 0.5rem;
@@ -62,7 +62,7 @@ height: 100vh;
 	height: 90%;
 }
 
-#color1 {
+/* #color1 {
 	background-image: linear-gradient(white, pink, hotpink, fuchsia);
 	color: turquoise;
 	text-shadow: 2px 2px 3px purple;
@@ -98,14 +98,14 @@ height: 100vh;
 	background-image: linear-gradient(darksalmon, brown, maroon);
 	text-shadow: 1px 1px 3px hotpink;
 	color: white;
-}
+} */
 
 button {
-	transition-duration: .5s ;
+	transition-duration: .1s ;
 	z-index: 15;
-	padding: 0 10px;
-	height: 2rem;
-	width: 6rem;
+	/* padding: 0 10px; */
+	/* height: 3rem;
+	width: 3rem; */
 	font-size: 1rem;
 	border-radius: 0.5rem;
 	border: none;
@@ -113,7 +113,7 @@ button {
 }
 
 button:hover{
-	transform: scale(.95,.95);
+	transform: scale(1.1,1.1);
 }
 
 button:active{
@@ -702,4 +702,94 @@ body {
 	border-bottom: var(--skin1, rgb(255, 227, 194)) 2px solid;
 
 	filter: blur(1px);
+}
+
+.acc1{
+	top: 9rem;
+	position: absolute;
+	/* outline: 3px red solid; */
+	height: 10rem;
+	width: 7rem;
+}
+
+#pearl{
+	top:0;
+	left: 5px;
+	position: absolute;
+	display: none; 
+	padding: 2rem;
+	z-index:4 ;
+	
+	filter: blur(1px);
+
+	border-radius: 50%;
+	background-image: radial-gradient(rgb(255, 253, 250),rgb(236, 236, 222),rgb(215, 219, 168));
+
+	border-color:rgb(228, 225, 213) ;
+	border-style: solid;
+	border-width: 0 4px 1px 0 ;
+}
+
+#star{
+
+	top: 0;
+	left: 0px;
+	width:1rem;
+	height: 1rem;
+	clip-path: polygon(50% 0%, 61% 36%, 99% 44%, 62% 58%, 50% 98%, 38% 58%, 0 44%, 38% 37%);
+	position: absolute;
+	display: none; 
+	padding: 2rem;
+	z-index:4 ;
+	
+	filter: blur(2px);
+
+	border-radius: 50%;
+	background-image: radial-gradient(rgb(255, 247, 217),rgb(255, 212, 51),rgb(255, 207, 50), rgb(224, 177, 0));
+
+	border-color:rgb(228, 225, 213) ;
+	border-style: solid;
+	border-width: 0 4px 1px 0 ;
+}
+
+#diamond{
+	transition: .5s;
+	top: 2rem;
+	left: 0;
+	position: absolute;
+	display: none;
+	z-index: 4;
+
+	filter: blur(1px);
+	flex-direction: column;
+	align-items: center;
+
+
+	height: 100%;
+	width: 80%;
+
+}
+
+.dot{
+	margin: 3px;
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-image: radial-gradient(rgb(73, 0, 156),rgb(0, 0, 0));
+}
+
+.rhomb{
+	filter: blur(4px);
+	margin: 3px;
+	position: relative;
+	width: 4rem;
+	height: 6rem;
+	clip-path: polygon(50% 0%, 75% 40%, 51% 100%, 25% 40%);
+	background-image: radial-gradient(rgb(247, 239, 252),
+	rgb(189, 208, 214),rgb(44, 33, 51));
+}
+
+.swing:hover{
+	transform: rotate(-10deg) translate(10deg);
 }
