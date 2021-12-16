@@ -8,48 +8,48 @@
 
 :root {
 	/* top lip color */
-	--lip1: rgb(199, 0, 192);
+	--lip1: rgb(184, 81, 81);
 	/* top lip color w/ opacity */
-	--lip2: rgba(199, 0, 192, 0);
+	--lip2: rgba(184, 81, 81,0);
 	/* top lip highlight */
-	--lip3: rgb(255, 20, 169);
+	--lip3: rgb(232, 114, 114);
 	/* blush center/main color  */
-	--blush1: rgb(252, 66, 206);
+	--blush1: rgb(237, 159, 159);
 	/* blush center opacity 1 */
-	--blush2: rgba(252, 66, 206, 0.6);
+	--blush2: rgba(237, 159, 159, .6);
 	/* blush center none opacity  */
-	--blush3: rgb(252, 66, 206, 0);
+	--blush3: rgba(237, 159, 159, 0);
 	/* eyeshadow crease color */
-	--eye1: rgb(38, 136, 222);
+	--eye1: rgb(186, 117, 82);
 	/* eyeshadow 1 w/ opacity */
-	--eye2: rgba(38, 136, 222, 0);
+	--eye2: rgba(186, 117, 82,0);
 	/* very tip of the eyeshadow */
-	--eye3: rgb(177, 252, 250);
+	--eye3: rgb(232, 189, 167);
 	/* main eyeshadow */
-	--eye4: rgb(3, 248, 252);
+	--eye4: rgb(224, 192, 175);
 	/* iris light color */
 	--iris1: rgb(168, 65, 49);
 	/* iris darker outer color */
 	--iris2: rgb(64, 1, 1);
 	/* darker face color  */
-	--face1: rgb(255, 227, 194);
+	--face1: rgb(232, 176, 139);
 	/*  lighter face color */
-	--face2: rgb(255, 246, 235);
+	--face2: rgb(246, 202, 172);
 	/* face 2 w/ opacity */
-	--face3: rgba(255, 246, 235, 0.7);
+	--face3: rgba(246, 202, 172, 0.7);
 	/* face 2 w/ no opacity */
-	--face4: rgba(255, 246, 235, 0);
+	--face4: rgba(246, 202, 172, 0);
 	/* face 1 w/ no opacity */
-	--face5: rgba(255, 227, 194, 0);
+	--face5: rgba(232, 176, 139);
 	/* "white" */
-	--face6: rgb(255, 246, 235);
+	--face6: rgb(249, 219, 199);
 	/* face 1 w/ lil opacity */
-	--face7: rgba(255, 227, 194, 0.3);
+	--face7: rgba(232, 176, 139, 0.3);
 	/* shadow */
-	--face8: rgba(187, 142, 112, 0.3);
+	--face8: rgba(204, 130, 81, 0.3);
 
---bg1:aliceblue;
---bg2:violet;
+--bg1:black;
+--bg2:white;
 }
 
 .color{
