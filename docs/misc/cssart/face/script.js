@@ -1,11 +1,3 @@
-// document.addEventListener('mousemove', function(e) {
-//   let body = document.getElementById('jseye');
-//   let iris = document.getElementById('iris');
-//   let left = e.offsetX;
-//   let top = e.offsetY;
-//   iris.style.left = left + 'px';
-//   iris.style.top = top + 'px';
-// });
 
 //buttons
 
@@ -27,11 +19,13 @@ let button5 = document
 let button6 = document
 	.getElementById("skin3")
 	.addEventListener("click", changeSkin3);
-// let button7 = document
-// 	.getElementById("skin4")
-// 	.addEventListener("click", changeSkin4);
+let button7 = document
+	.getElementById("skin4")
+	.addEventListener("click", changeSkin4);
+let clear = document
+	.getElementById("clearbutton")
+	.addEventListener("click", clearAll);
  
-
 
 
 //class selectors
@@ -141,13 +135,21 @@ function changeSkin3() {
 	x.style.setProperty("--face8", "rgba(25, 11, 2, .3)");
 }
 
-// function changeSkin4() {
-// 	x.style.setProperty("--face1", "rgb(255, 227, 194)");
-// 	x.style.setProperty("--face2", "rgb(255, 246, 235)");
-// 	x.style.setProperty("--face3", "rgba(255, 246, 235, 0.7)");
-// 	x.style.setProperty("--face4", "rgba(255, 246, 235, 0)");
-// 	x.style.setProperty("--face5", "rgba(255, 227, 194, 0)");
-// }
+function changeSkin4() {
+	x.style.setProperty("--face1", "rgb(88, 80, 191)");
+	x.style.setProperty("--face2", "rgb(178, 149, 252)");
+	x.style.setProperty("--face3", "rgba(178, 149, 252, 0.7)");
+	x.style.setProperty("--face4", "rgba(178, 149, 252, 0)");
+	x.style.setProperty("--face5", "rgba(88, 80, 191, 0)");
+	x.style.setProperty("--face6", "rgb(189, 220, 255)");
+	x.style.setProperty("--face7", "rgba(88, 80, 191, 0.3)");
+	x.style.setProperty("--face8", "rgba(33, 0, 122, .3)");
+}
+
+
+
+//        color/\    
+//        other \/
 
 //buttons : button ID and then the funtion 
 
@@ -162,6 +164,7 @@ let earring2 = document
 let earring3 = document
 	.getElementById("earring3")
 	.addEventListener("click", changeEarring3);
+
 //getting the ID of the accessories
 
 let pearl = document.querySelector("#pearl");
@@ -187,4 +190,49 @@ function changeEarring3(){
 	pearl.style.setProperty("display", "none");
 	star.style.setProperty("display", "none");
 	diamond.style.setProperty("display", "flex");
+}
+
+
+
+
+
+function clearAll(){
+
+	//face colors
+	x.style.setProperty("--lip1", "rgb(184, 81, 81)");
+	x.style.setProperty("--lip2", "rgba(184, 81, 81,0)");
+	x.style.setProperty("--lip3", "rgb(232, 114, 114)");
+
+	x.style.setProperty("--blush1", "rgb(237, 159, 159)");
+	x.style.setProperty("--blush2", "rgba(237, 159, 159, .6)");
+	x.style.setProperty("--blush3", "rgba(237, 159, 159, 0)");
+
+	x.style.setProperty("--eye1", "rgb(186, 117, 82)");
+	x.style.setProperty("--eye2", "rgba(186, 117, 82,0)");
+	x.style.setProperty("--eye3", "rgb(232, 189, 167)");
+	x.style.setProperty("--eye4", "rgb(224, 192, 175)");
+
+	x.style.setProperty("--iris1", "rgb(168, 65, 49)");
+	x.style.setProperty("--iris2", "rgb(64, 1, 1)");
+
+	x.style.setProperty("--bg1", "aliceblue");
+	x.style.setProperty("--bg2", "violet");
+
+
+	//accessories
+
+	pearl.style.setProperty("display", "none");
+	star.style.setProperty("display", "none");
+	diamond.style.setProperty("display", "none");
+
+	//face
+
+	x.style.setProperty("--face1", "rgb(232, 176, 139)");
+	x.style.setProperty("--face2", "rgb(246, 202, 172)");
+	x.style.setProperty("--face3", "rgba(246, 202, 172, 0.7)");
+	x.style.setProperty("--face4", "rgba(246, 202, 172, 0)");
+	x.style.setProperty("--face5", "rgba(232, 176, 139, 0)");
+	x.style.setProperty("--face6", "rgb(249, 219, 199)");
+	x.style.setProperty("--face7", "rgba(232, 176, 139, 0.3)");
+	x.style.setProperty("--face8", "rgba(204, 130, 81, 0.3)");
 }

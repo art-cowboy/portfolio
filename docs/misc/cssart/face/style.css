@@ -634,6 +634,8 @@ body {
 }
 
 .ear {
+
+	filter: blur(1px);
 	right: -80px;
 	top: 120px;
 
