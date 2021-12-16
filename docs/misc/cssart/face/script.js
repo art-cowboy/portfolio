@@ -195,7 +195,6 @@ function changeEarring3(){
 
 
 
-
 function clearAll(){
 
 	//face colors
@@ -215,8 +214,8 @@ function clearAll(){
 	x.style.setProperty("--iris1", "rgb(168, 65, 49)");
 	x.style.setProperty("--iris2", "rgb(64, 1, 1)");
 
-	x.style.setProperty("--bg1", "aliceblue");
-	x.style.setProperty("--bg2", "violet");
+	x.style.setProperty("--bg1", "black");
+	x.style.setProperty("--bg2", "white");
 
 
 	//accessories
