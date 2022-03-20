@@ -1,23 +1,24 @@
+ // reference to iframe element container from second (innermost) iframe
+let iframe2 = window.frameElement;
+// reference to container's document, ie the first iframe aka middleman
+let doc2 = iframe2.ownerDocument;
 
-let iframe1 = document.getElementById("iframe1");
+//reference iframe elemnet container of first, middleman iframe 
+let iframe1 = parent.window.frameElement;
+//reference to container's document, aka the main page
+let doc1 = iframe1.ownerDocument;
 
-// using reference to iframe obtained above
-let win1 = iframe1.contentWindow; // reference to iframe's window
-// reference to document in iframe
-let doc1 = iframe1.contentDocument? iframe1.contentDocument:
-        iframe1.contentWindow.document;
-// reference to form named 'demoForm' in iframe
-let test = doc1.getElementById('test')
-.addEventListener("click", testLog);
+let change = document.getElementById("change")
+.addEventListener("click",changeBg);
 
-let bg = document.getElementByClassName("bg");
+let bg = doc1.getElementById("main-page");
 
-function testLog(){
-    console.log("okay we here rn");
+function changeBg(){
+    console.log("this works???");
     bg.style.backgroundImage = "url(balls.png)";
 }
 
-function changeBg(){
-    // bg.style.backgroundImage = "url(https://picsum.photos/id/100/700)";
-    console.log("pleeeaasseeeeeeee");
+function testLog(){
+    console.log("hello");
 }
+
