@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#main-page{
+    height:100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.bg{
+    background-image:url(https://picsum.photos/id/500/700);
+}
+
+#bg1{
+    background-color: blue;
+}
+
+#bg2{
+    background-color: cornflowerblue;
+}
+
+iframe{
+    margin: 0 auto;
+    height: 50%;
+    width: 50vw;
+}
