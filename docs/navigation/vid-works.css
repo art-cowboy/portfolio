@@ -45,3 +45,38 @@ a:hover{
 span{
     padding-left: 2rem;
 }
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block-item{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+} 
+.block-item2{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+} 
+
+.block .media{
+    width: 70vw;
+} 
+
+.block .smaller{
+    width: 35vw;
+} 
+
+.block .larger{
+    width: 90vw;
+} 

@@ -1,0 +1,85 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flexbox;
+    font-family: sans-serif;
+}
+
+div{
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* 
+@keyframes fadeup {
+    0%{
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    25%{
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
+} */
+
+.intro{
+    animation: fadeup 5s 1 ;
+    max-width: 15rem;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.artist-statement{
+    animation: fadeup 10s 1 ;
+    max-width: 35rem;
+}
+
+a{
+    color: inherit;
+    font-family: inherit;
+}
+
+a:visited{
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+#gender{
+    font-family: cursive;
+    color: blueviolet;
+}
+#cowboy{
+    font-family: serif;
+    color: coral;
+}
+#cyborg{
+    font-family: monospace;
+    color: rgb(128, 255, 0);
+    font-size: 1.5rem;
+}
+
+#gender1{
+    margin-top: 30rem;
+    max-width: 35rem;
+    background-color: rgb(184, 255, 113);
+}
+
+#cowboy1{
+    margin-top: 20rem;
+    max-width: 35rem;
+    background-color: rgb(171, 112, 227);
+}
+
+#cyborg1{
+    margin-top: 20rem;
+    max-width: 35rem;
+    background-color: rgb(252, 180, 154);
+}

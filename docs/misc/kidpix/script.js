@@ -37,6 +37,24 @@ let changee8 = document.getElementById("pix8")
 let changee9 = document.getElementById("pix9")
 .addEventListener("click", change9);
 
+let changee10 = document.getElementById("pix10")
+.addEventListener("click", change10);
+
+let changee11 = document.getElementById("pix11")
+.addEventListener("click", change11);
+
+let changee12 = document.getElementById("pix12")
+.addEventListener("click", change12);
+
+let changee13 = document.getElementById("pix13")
+.addEventListener("click", change13);
+
+let changee14 = document.getElementById("pix14")
+.addEventListener("click", change14);
+
+let changee15 = document.getElementById("pix15")
+.addEventListener("click", change15);
+
 function change1(){
     console.log("im working")
     doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark1-full.png)";
@@ -80,5 +98,36 @@ function change8(){
 function change9(){
     console.log("im working")
     doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark9-full.png)";
+    doc2.body.style.backgroundSize = "cover";
+}
+
+function change10(){
+    console.log("im working")
+    doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark10-full.png)";
+    doc2.body.style.backgroundSize = "cover";
+}
+function change11(){
+    console.log("im working")
+    doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark11-full.png)";
+    doc2.body.style.backgroundSize = "cover";
+}
+function change12(){
+    console.log("im working")
+    doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark12-full.png)";
+    doc2.body.style.backgroundSize = "cover";
+}
+function change13(){
+    console.log("im working")
+    doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark13-full.png)";
+    doc2.body.style.backgroundSize = "cover";
+}
+function change14(){
+    console.log("im working")
+    doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark14-full.png)";
+    doc2.body.style.backgroundSize = "cover";
+}
+function change15(){
+    console.log("im working")
+    doc2.body.style.backgroundImage = "url(../misc/kidpix/kidpix-clark15-full.png)";
     doc2.body.style.backgroundSize = "cover";
 }
