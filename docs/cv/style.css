@@ -14,6 +14,7 @@ html{
 
 }
 
+
 @font-face {
     font-family:vhs;
     src: url(../font/vhs.ttf);
@@ -26,6 +27,17 @@ html{
     font-family:comicsans;
     src: url(../font/comicsans.ttf);
 }
+
+img{
+    display:block;
+    width:5%;
+    height: 5%;
+}
+
+ img:hover{
+    width:50%;
+    height:50%;
+} 
 
 h1{
     font-family: monospace;
@@ -45,6 +57,12 @@ h2{
 h3{
     font-family: monospace;
     display: inline;
+}
+
+h5{
+    font-family: monospace;
+    font-size: 1rem;
+    color: cornflowerblue;
 }
 
 /* h3:hover{
@@ -73,6 +91,8 @@ a:visited{
     width: 90%;
     text-align: justify;
     margin-bottom: 1rem;
+
+
 }
 
 .cv-item{
@@ -97,4 +117,31 @@ a:visited{
     width: max-content;
     font-style: italic;
     letter-spacing: 3rem;
+}
+
+.notes{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    padding: 6px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: rgba(240, 248, 255,1);
+}
+
+
+@media only screen and (max-width: 600px) {
+    img{
+        display:block;
+        width:25%;
+        height:25%;
+    }
+    
+     img:hover{
+        width:100%;
+        height:100%;
+    } 
 }
