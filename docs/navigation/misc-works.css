@@ -58,3 +58,10 @@ a:hover{
 .block .media{
     width: 70vw;
 }
+
+.block-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
