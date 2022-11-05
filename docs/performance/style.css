@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: url(../cursors/saturn.png), auto;
+
+}
+@font-face {
+    font-family:vhs;
+    src: url(font/vhs.ttf);
+}
+@font-face {
+    font-family:matrix;
+    src: url(font/matrix.ttf);
+}
+@font-face {
+    font-family:comicsans; 
+    src: url(../font/comicsans.ttf);
+}
+
+body{
+    
+    /* background: chartreuse; */
+}
+
+h1{
+    font-family: cursive;
+    color: hotpink;
+} 
+
+.icon-deco{
+    height: 90%;
+    padding-right:1rem;
+}
+
+.top-deco{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px  0 0 ;
+    background-image: linear-gradient(cyan, rgba(15, 209, 223, 0.7) );
+    width: 100vw;
+    height: 2rem;
+}
+.sidebar{
+    top: 2rem;
+    position:absolute;
+} 
+  
+.sidebar ul{
+    
+    position: fixed;
+    width: max-content;
+    width: 13rem;
+    height: 100vh;
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(248, 240, 247, 0.7);
+}
+
+
+.item{
+    padding: .7rem .3rem;
+ /* background-image: linear-gradient(red, white); */
+ }
+
+.item a{
+    color: black;
+    font-family:comicsans;
+    text-shadow: fuchsia 1px 1px 1px;
+}
+ 
+.item a:hover{
+    transition: .3s;
+     text-shadow:yellow 1px 1px 1px;
+ }
+ .item a:active{
+    text-shadow:yellow 1px 1px 1px;
+ }
+
+.sidebar input{
+    display: none;
+}
+
+.piece{
+    position: absolute;
+    left:13rem;
+    height: calc(100vh - 2rem);
+    width: calc(100% - 13rem);
+    top:2rem;
+    overflow: scroll;
+}
+
+
+@media only screen and (max-width: 550px) {
+    
+    .top-deco{
+        display: none;
+    }
+   
+    .sidebar input{
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; /* hide this */
+        z-index: 3; /* and place it over the hamburger */
+        
+        /* -webkit-touch-callout: none; */
+    }
+
+    .sidebar ul{
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        max-width: 13rem;
+        
+        /* background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased; */
+        /* to stop flickering of text in safari */
+        
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    .sidebar span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin: 5px;
+        position: relative;
+        
+        background: white;
+        border-radius: 3px;
+        
+        z-index: 2;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    .sidebar span:first-child{
+        transform-origin: 0% 0%;
+    }
+
+    .sidebar span:nth-last-child(2){
+        transform-origin: 0% 100%;
+    }
+    .sidebar input:checked ~ span{
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+
+    .sidebar input:checked ~ span:nth-last-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    .sidebar input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    .sidebar input:checked ~ ul{
+        transform: none;
+    }
+
+    .piece{
+        z-index:  -1;
+        position: absolute;
+        top: 0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        
+    }
+   
+}
+ 
