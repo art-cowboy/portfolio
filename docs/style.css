@@ -248,6 +248,12 @@ a:visited{
     align-items: center;
 }
 
+.melon h1{
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: black;
+}
+
 .melon h2{
     animation: melon 4s infinite;
     font-family: vhs;
@@ -303,7 +309,7 @@ span{
 
     }
     
-    .content{
+    .content{ 
         /* iframe element */
         width: 95%;
         height: 75vmax;
